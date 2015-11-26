@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    {% set conference="NISO/NFAIS Virtual Conference - The Semantic Web: What's New and Cool" %}
+    {% set title="Speeding up the Semantic Web" %}
+    <title>{{ title }}</title> 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/bootstrap.min.css") }}">
+  </head>
+  <body class="container">
+    <nav class="navbar navbar-dark bg-success">
+     <a class="navbar-brand" href="{{ url_for('index') }}">{{ title }}</a> 
+     <ul class="nav navbar-nav">
+       <li class="nav-item">
+         <a class="nav-link" href="#">Slides</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="#">Resources</a>
+       </li>
+       <li class="nav-item pull-right">
+         <a class="nav-link" href="{{ url_for('about') }}">About<span class="sr-only">(current)</span></a>
+       </li>
+     </ul>
+    </nav>
+   {% block header %} 
+   <div class="row">
+     <section class="col-md-8 col-md-offset-2">
+      <div class="jumbotron">
+       <h3>{{ conference }}</h3>
+       <h1 class="display-3">{{ title }}</h1>
+       <p class="lead">Serving Linked Data Fragments</p> 
+      </div>
+     </section>
+   </div>
+   {% endblock %}
+    {% block main %}
+
+
+    {% endblock %}
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename="js/bootstrap.js") }}"></script>
+
+  </body>
+</html>
