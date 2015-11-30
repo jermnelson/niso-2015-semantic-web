@@ -13,7 +13,13 @@ print(OUTPUT_DIR)
 def render_templates():
     for template_name in ["index.html", 
         "about.html",
-        "bibframe-overview.html"]:
+        "bibframe-overview.html",
+        "bibcat.html",
+        "bibframe-2.0.html",
+        "languages.html",
+        "identifiers.html",
+        "sparql.html",
+        "summary.html"]:
         template = ENV.get_template(template_name)
         with open(os.path.join(OUTPUT_DIR, template_name),
                   "w+") as raw_file:
