@@ -2,6 +2,43 @@
 
 {% block slide_title %}SPARQL Examples{% endblock %}
 
-{% block content %}{% endblock %}
+{% block content %}
+<div id="sparql-carousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="sparql-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="sparql-carousel" data-slide-to="1"></li>
+
+  </ol>
+
+  <div class="carousel-inner" role="listbox">
+   <div class="item active">
+     <div class="row">
+       <div class="col-md-8 col-md-offset-2">
+         {% include 'slides/querying-resource.html' %}
+       </div>
+     </div>
+   </div>
+   <div class="item">
+     <div class="row">
+       <div class="col-md-8 col-md-offset-2">
+         {% include 'slides/resources-specific-type.html' %}
+       </div>
+     </div>
+   </div>
+
+  </div>
+
+  <a class="left carousel-control" href="#sparql-carousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#sparql-carousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+</div>
+
+{% endblock %}
 {% block previous_page %}identifiers.html{% endblock %}
 {% block next_page %}summary.html{% endblock %}

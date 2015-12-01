@@ -6,8 +6,9 @@ import os
 
 ENV = jinja2.Environment(
         loader=jinja2.PackageLoader("presentation", "templates"))
-OUTPUT_DIR = os.path.join(os.path.abspath(os.path.dirname(__file__)),
-                         "dist")
+#OUTPUT_DIR = os.path.join(os.path.abspath(os.path.dirname(__file__)),
+#                         "dist")
+OUTPUT_DIR = "E:\\2015\\knowledgelinks.github.io\\presentations\\niso-2015"
 print(OUTPUT_DIR)
 
 def render_templates():
@@ -18,6 +19,7 @@ def render_templates():
         "bibframe-2.0.html",
         "languages.html",
         "identifiers.html",
+        "rdf.html",
         "sparql.html",
         "summary.html"]:
         template = ENV.get_template(template_name)

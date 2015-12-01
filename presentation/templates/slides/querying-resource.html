@@ -1,0 +1,19 @@
+<h2>Querying for a resource</h2>
+<p class="lead">
+Once resources are de-duplicated if becomes quite simple to find them. 
+Once found you get all the information about the resource regardless of usage!!!
+</p>
+<p class="lead">
+ Simple SPARQL query to find a resource and all its information regardless of URI used:
+</p>
+<code>
+<pre>
+SELECT ?URI ?p ?o
+WHERE
+{
+	?URI 	owl:sameAs 	<any aliased URI> .
+	?URI		?p			?o
+}
+</pre>
+</code>
+
