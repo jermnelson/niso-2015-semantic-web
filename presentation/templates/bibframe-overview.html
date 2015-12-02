@@ -2,7 +2,20 @@
 
 {% block main %}
 <h1>BIBFRAME RDF Vocabulary</h1>
-
+<div class="row">
+ <section class="col-md-6">
+  <p class="lead">Started in 2011, BIBFRAME, short for <strong>Bib</strong>liographic
+  <strong>Frame</strong>work, is an RDF vocabulary and associated technologies that is sponsored
+  by the Library of Congress as an eventual replacement for MARC21. The current version (1.0) of
+  BIBFRAME is made up four main classes; Works, Instances, Authorities, and Annotations. The 
+  following graphic from the <a href="http://bibframe.org/">bibframe.org</a> shows the relationships
+  between these classes as a model for describing bibliographic resources and their relationships.</p>
+ </section>
+ <section class="col-md-6">
+  <img src="http://bibframe.org/static/images/bibframe.png">
+  <br>Source <a href="http://bibframe.org/static/images/bibframe.png">http://bibframe.org/static/images/bibframe.png"</a>
+ </section>
+</div>
 {% endblock %}
 
 {% block previous_page %}index.html{% endblock %}

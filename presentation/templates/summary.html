@@ -3,7 +3,40 @@
 {% block slide_title %}
 Summary
 {% endblock %}
-{% block content %}{% endblock %}
+{% block content %}
+<div class="row">
+ <section class="col-md-8">
+  <div class="panel panel-success">
+   <div class="panel-body">
+    <h2>Internal Data Design Goals</h2>
+    <ul class="lead">
+     <li>Information exists once</li>
+     <li>Change to information will update everywhere</li>
+     <li>Clean, uncluttered data repository</li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</div>
+<hr>
+<div class="row">
+ <section class="col-md-6">
+  <img src="http://intro2libsys.info/cc-parents-weekend-2015/static/images/cc-tiger-logo.png">
+  <h2>Colorado College Library Web Servers<br>
+   i.e. You're Website IS is your Catalog (&amp; digital repository, etc.)</h2>
+  <p class="lead"> 
+   The Colorado College library is exploring how the BIBCAT can augment the 
+   information architecture for it's current website with the intention that 
+   both our bibliographic and operational data can be embedded into the functionality 
+   and presentation of the library's resources and services.
+  <h2>
+ </section>
+ <section class="col-md-6">
+  <h2>Catalog Pull Platform</h2>
+  <img src="/images/your-catalog.svg" class="img-thumbnail">
+ </section>
+</div>
+{% endblock %}
 
-{% block previous_page %}identifiers.html{% endblock %}
+{% block previous_page %}sparql.html{% endblock %}
 {% block next_page %}index.html{% endblock %}

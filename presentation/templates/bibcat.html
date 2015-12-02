@@ -2,7 +2,27 @@
 
 {% block main %}
 <h1>BIBCAT - BIBFRAME Catalog</h1>
-
+<h2>BIBFRAME Search &amp; Display System <small>Iteration 1</small></h2>
+<div class="row">
+ <section class="col-md-6">
+    <p class="lead">In the fall of 2014, Aaron Schmidt of Influx Library User Interface Design and I were
+         awarded a contract with the Library of Congress for a <b>BIBFRAME Search and Display Systems</b>
+         that resulted in <a href="http://bibcat.org">BIBCAT</a> - a BIBFRAME Catalog - a lightweight catalog web application that
+         uses the backend BIBFRAME Datastore. Check out the current pilot that is loaded with sample datasets from the 
+         Library of Congress (original records were generated from MARC records related to the subjects, "Mark Twain" and "Bible").
+  </p>
+ </section>
+ <section class="col-md-6">
+   <img src="/images/bibcat-v.5.png" class="img-thumbnail">
+ </section>
+</div>
+<hr>
+<h2>BIBCAT <small>Iteration 2</small></h2>
+<p class="lead">Single Page App, Docker Environment, &amp; Kibana Reporting and Visualization</p>
+<h3><a href="http://bibcat.org" >Current BIBCAT</a></h3>
+<h3>Docker Environment</h3>
+<img src="/images/semantic-server-docker-env.svg" style="width:500px;height:auto">
+{# <img src="/images/your-catalog.svg"> #}
 {% endblock %}
 
 {% block previous_page %}bibframe-overview.html{% endblock %}
